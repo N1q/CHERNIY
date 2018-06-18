@@ -338,7 +338,7 @@ namespace ATC_cs
 
         private void оПрограммеToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Программный продукт создан для получения практических навыков по своей специальности.");
+            MessageBox.Show("ПО разработал Черный Сергей.\n\nВерсия ПО: 16.1.2.24.");
         }
         bool PaymentExists()
         {
@@ -557,6 +557,24 @@ namespace ATC_cs
             decimal res = Convert.ToDecimal(tariffs.Find(x => x.tariff == cb_tariff.Text).balance) - nud_summa.Value;
             if (res < 0) res = 0;
             nud_zadol.Value = res;
+        }
+
+        private void телефонToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            newPhone f = new newPhone();
+            f.ShowDialog();
+        }
+
+        private void абонентаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            newAbonent f = new newAbonent();
+            f.ShowDialog();
+        }
+
+        private void тарифToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            newTariff f = new newTariff();
+            f.ShowDialog();
         }
     }
     //класс, объединяющий все другие

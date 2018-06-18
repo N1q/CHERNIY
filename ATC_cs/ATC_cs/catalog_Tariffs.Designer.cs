@@ -39,7 +39,7 @@
             // btn_cancel
             // 
             this.btn_cancel.Location = new System.Drawing.Point(16, 353);
-            this.btn_cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(80, 28);
             this.btn_cancel.TabIndex = 34;
@@ -51,7 +51,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(317, 11);
+            this.label5.Location = new System.Drawing.Point(13, 9);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(260, 29);
@@ -64,10 +64,10 @@
             this.dgv_abonents.AllowUserToDeleteRows = false;
             this.dgv_abonents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_abonents.Location = new System.Drawing.Point(16, 149);
-            this.dgv_abonents.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_abonents.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_abonents.Name = "dgv_abonents";
             this.dgv_abonents.ReadOnly = true;
-            this.dgv_abonents.Size = new System.Drawing.Size(911, 187);
+            this.dgv_abonents.Size = new System.Drawing.Size(598, 187);
             this.dgv_abonents.TabIndex = 32;
             // 
             // label1
@@ -85,7 +85,7 @@
             this.tb_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tb_search.Location = new System.Drawing.Point(82, 103);
             this.tb_search.Name = "tb_search";
-            this.tb_search.Size = new System.Drawing.Size(845, 30);
+            this.tb_search.Size = new System.Drawing.Size(532, 30);
             this.tb_search.TabIndex = 37;
             this.tb_search.TextChanged += new System.EventHandler(this.tb_search_TextChanged);
             // 
@@ -93,13 +93,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(965, 399);
+            this.ClientSize = new System.Drawing.Size(632, 399);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tb_search);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dgv_abonents);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "catalog_Tariffs";
             this.Text = "catalog_Tariffs";
             this.Load += new System.EventHandler(this.catalog_Tariffs_Load);

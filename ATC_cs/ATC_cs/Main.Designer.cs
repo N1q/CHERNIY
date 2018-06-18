@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.dgv_abonents = new System.Windows.Forms.DataGridView();
-            this.btn_newTariff = new System.Windows.Forms.Button();
-            this.btn_newAbonent = new System.Windows.Forms.Button();
-            this.btn_newPhone = new System.Windows.Forms.Button();
             this.cb_phone = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,6 +37,10 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.операцииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.печатьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.добавитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.телефонToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.абонентаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.тарифToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справочникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.телефонToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.абонентToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,52 +69,19 @@
             this.dgv_abonents.AllowUserToAddRows = false;
             this.dgv_abonents.AllowUserToDeleteRows = false;
             this.dgv_abonents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_abonents.Location = new System.Drawing.Point(420, 65);
-            this.dgv_abonents.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_abonents.Location = new System.Drawing.Point(331, 65);
+            this.dgv_abonents.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_abonents.Name = "dgv_abonents";
             this.dgv_abonents.ReadOnly = true;
-            this.dgv_abonents.Size = new System.Drawing.Size(1075, 293);
+            this.dgv_abonents.Size = new System.Drawing.Size(1042, 293);
             this.dgv_abonents.TabIndex = 27;
             this.dgv_abonents.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_abonents_CellContentClick);
-            // 
-            // btn_newTariff
-            // 
-            this.btn_newTariff.Location = new System.Drawing.Point(293, 212);
-            this.btn_newTariff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_newTariff.Name = "btn_newTariff";
-            this.btn_newTariff.Size = new System.Drawing.Size(57, 25);
-            this.btn_newTariff.TabIndex = 26;
-            this.btn_newTariff.Text = "...";
-            this.btn_newTariff.UseVisualStyleBackColor = true;
-            this.btn_newTariff.Click += new System.EventHandler(this.btn_newTariff_Click);
-            // 
-            // btn_newAbonent
-            // 
-            this.btn_newAbonent.Location = new System.Drawing.Point(295, 149);
-            this.btn_newAbonent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_newAbonent.Name = "btn_newAbonent";
-            this.btn_newAbonent.Size = new System.Drawing.Size(56, 25);
-            this.btn_newAbonent.TabIndex = 24;
-            this.btn_newAbonent.Text = "...";
-            this.btn_newAbonent.UseVisualStyleBackColor = true;
-            this.btn_newAbonent.Click += new System.EventHandler(this.btn_newAbonent_Click);
-            // 
-            // btn_newPhone
-            // 
-            this.btn_newPhone.Location = new System.Drawing.Point(295, 117);
-            this.btn_newPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_newPhone.Name = "btn_newPhone";
-            this.btn_newPhone.Size = new System.Drawing.Size(56, 25);
-            this.btn_newPhone.TabIndex = 20;
-            this.btn_newPhone.Text = "...";
-            this.btn_newPhone.UseVisualStyleBackColor = true;
-            this.btn_newPhone.Click += new System.EventHandler(this.btn_newPhone_Click);
             // 
             // cb_phone
             // 
             this.cb_phone.FormattingEnabled = true;
             this.cb_phone.Location = new System.Drawing.Point(156, 116);
-            this.cb_phone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_phone.Margin = new System.Windows.Forms.Padding(4);
             this.cb_phone.Name = "cb_phone";
             this.cb_phone.Size = new System.Drawing.Size(129, 24);
             this.cb_phone.TabIndex = 19;
@@ -169,14 +137,15 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1565, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1389, 28);
             this.menuStrip1.TabIndex = 14;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // операцииToolStripMenuItem
             // 
             this.операцииToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.печатьToolStripMenuItem});
+            this.печатьToolStripMenuItem,
+            this.добавитьToolStripMenuItem});
             this.операцииToolStripMenuItem.Name = "операцииToolStripMenuItem";
             this.операцииToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
             this.операцииToolStripMenuItem.Text = "Операции";
@@ -184,9 +153,40 @@
             // печатьToolStripMenuItem
             // 
             this.печатьToolStripMenuItem.Name = "печатьToolStripMenuItem";
-            this.печатьToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
+            this.печатьToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.печатьToolStripMenuItem.Text = "Печать";
             this.печатьToolStripMenuItem.Click += new System.EventHandler(this.печатьToolStripMenuItem_Click);
+            // 
+            // добавитьToolStripMenuItem
+            // 
+            this.добавитьToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.телефонToolStripMenuItem1,
+            this.абонентаToolStripMenuItem,
+            this.тарифToolStripMenuItem});
+            this.добавитьToolStripMenuItem.Name = "добавитьToolStripMenuItem";
+            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.добавитьToolStripMenuItem.Text = "Новый";
+            // 
+            // телефонToolStripMenuItem1
+            // 
+            this.телефонToolStripMenuItem1.Name = "телефонToolStripMenuItem1";
+            this.телефонToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.телефонToolStripMenuItem1.Text = "Телефон";
+            this.телефонToolStripMenuItem1.Click += new System.EventHandler(this.телефонToolStripMenuItem1_Click);
+            // 
+            // абонентаToolStripMenuItem
+            // 
+            this.абонентаToolStripMenuItem.Name = "абонентаToolStripMenuItem";
+            this.абонентаToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.абонентаToolStripMenuItem.Text = "Абонент";
+            this.абонентаToolStripMenuItem.Click += new System.EventHandler(this.абонентаToolStripMenuItem_Click);
+            // 
+            // тарифToolStripMenuItem
+            // 
+            this.тарифToolStripMenuItem.Name = "тарифToolStripMenuItem";
+            this.тарифToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.тарифToolStripMenuItem.Text = "Тариф";
+            this.тарифToolStripMenuItem.Click += new System.EventHandler(this.тарифToolStripMenuItem_Click);
             // 
             // справочникиToolStripMenuItem
             // 
@@ -243,8 +243,8 @@
             // 
             // btn_done
             // 
-            this.btn_done.Location = new System.Drawing.Point(245, 330);
-            this.btn_done.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_done.Location = new System.Drawing.Point(181, 330);
+            this.btn_done.Margin = new System.Windows.Forms.Padding(4);
             this.btn_done.Name = "btn_done";
             this.btn_done.Size = new System.Drawing.Size(105, 28);
             this.btn_done.TabIndex = 28;
@@ -256,18 +256,18 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(15, 65);
+            this.label5.Location = new System.Drawing.Point(17, 65);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(367, 29);
+            this.label5.Size = new System.Drawing.Size(100, 29);
             this.label5.TabIndex = 29;
-            this.label5.Text = "Добавление / редактирование";
+            this.label5.Text = "Оплата";
             // 
             // cb_tariff
             // 
             this.cb_tariff.FormattingEnabled = true;
             this.cb_tariff.Location = new System.Drawing.Point(155, 210);
-            this.cb_tariff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_tariff.Margin = new System.Windows.Forms.Padding(4);
             this.cb_tariff.Name = "cb_tariff";
             this.cb_tariff.Size = new System.Drawing.Size(131, 24);
             this.cb_tariff.TabIndex = 30;
@@ -277,7 +277,7 @@
             // 
             this.cb_abonent.FormattingEnabled = true;
             this.cb_abonent.Location = new System.Drawing.Point(156, 150);
-            this.cb_abonent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_abonent.Margin = new System.Windows.Forms.Padding(4);
             this.cb_abonent.Name = "cb_abonent";
             this.cb_abonent.Size = new System.Drawing.Size(129, 24);
             this.cb_abonent.TabIndex = 31;
@@ -285,7 +285,7 @@
             // date
             // 
             this.date.Location = new System.Drawing.Point(155, 181);
-            this.date.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.date.Margin = new System.Windows.Forms.Padding(4);
             this.date.MaxDate = new System.DateTime(7998, 12, 31, 0, 0, 0, 0);
             this.date.Name = "date";
             this.date.Size = new System.Drawing.Size(131, 22);
@@ -294,7 +294,7 @@
             // nud_summa
             // 
             this.nud_summa.Location = new System.Drawing.Point(155, 244);
-            this.nud_summa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nud_summa.Margin = new System.Windows.Forms.Padding(4);
             this.nud_summa.Maximum = new decimal(new int[] {
             1661992960,
             1808227885,
@@ -308,7 +308,7 @@
             // nud_zadol
             // 
             this.nud_zadol.Location = new System.Drawing.Point(155, 276);
-            this.nud_zadol.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nud_zadol.Margin = new System.Windows.Forms.Padding(4);
             this.nud_zadol.Maximum = new decimal(new int[] {
             1661992960,
             1808227885,
@@ -322,7 +322,7 @@
             // btn_delete
             // 
             this.btn_delete.Location = new System.Drawing.Point(20, 330);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(4);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(105, 28);
             this.btn_delete.TabIndex = 35;
@@ -354,7 +354,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1565, 407);
+            this.ClientSize = new System.Drawing.Size(1389, 407);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btn_delete);
@@ -366,16 +366,13 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btn_done);
             this.Controls.Add(this.dgv_abonents);
-            this.Controls.Add(this.btn_newTariff);
-            this.Controls.Add(this.btn_newAbonent);
-            this.Controls.Add(this.btn_newPhone);
             this.Controls.Add(this.cb_phone);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
@@ -393,9 +390,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgv_abonents;
-        private System.Windows.Forms.Button btn_newTariff;
-        private System.Windows.Forms.Button btn_newAbonent;
-        private System.Windows.Forms.Button btn_newPhone;
         private System.Windows.Forms.ComboBox cb_phone;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -421,6 +415,10 @@
         public System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ToolStripMenuItem добавитьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem телефонToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem абонентаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem тарифToolStripMenuItem;
     }
 }
 

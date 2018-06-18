@@ -41,56 +41,62 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 105);
+            this.label5.Location = new System.Drawing.Point(13, 106);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.Size = new System.Drawing.Size(56, 17);
             this.label5.TabIndex = 13;
             this.label5.Text = "Баланс";
             // 
             // nud_balance
             // 
             this.nud_balance.DecimalPlaces = 2;
-            this.nud_balance.Location = new System.Drawing.Point(57, 103);
+            this.nud_balance.Location = new System.Drawing.Point(16, 127);
+            this.nud_balance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nud_balance.Maximum = new decimal(new int[] {
             100000000,
             0,
             0,
             0});
             this.nud_balance.Name = "nud_balance";
-            this.nud_balance.Size = new System.Drawing.Size(122, 20);
+            this.nud_balance.Size = new System.Drawing.Size(221, 22);
             this.nud_balance.TabIndex = 12;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 43);
+            this.label4.Location = new System.Drawing.Point(12, 53);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 13);
+            this.label4.Size = new System.Drawing.Size(52, 17);
             this.label4.TabIndex = 11;
             this.label4.Text = "Тариф";
             // 
             // tb_tariff
             // 
-            this.tb_tariff.Location = new System.Drawing.Point(12, 59);
+            this.tb_tariff.Location = new System.Drawing.Point(16, 73);
+            this.tb_tariff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_tariff.Name = "tb_tariff";
-            this.tb_tariff.Size = new System.Drawing.Size(167, 20);
+            this.tb_tariff.Size = new System.Drawing.Size(221, 22);
             this.tb_tariff.TabIndex = 10;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(27, 9);
+            this.label1.Location = new System.Drawing.Point(10, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 24);
+            this.label1.Size = new System.Drawing.Size(167, 29);
             this.label1.TabIndex = 9;
             this.label1.Text = "Новый тариф";
             // 
             // btn_done
             // 
-            this.btn_done.Location = new System.Drawing.Point(119, 159);
+            this.btn_done.Location = new System.Drawing.Point(159, 196);
+            this.btn_done.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_done.Name = "btn_done";
-            this.btn_done.Size = new System.Drawing.Size(60, 23);
+            this.btn_done.Size = new System.Drawing.Size(80, 28);
             this.btn_done.TabIndex = 15;
             this.btn_done.Text = "Создать";
             this.btn_done.UseVisualStyleBackColor = true;
@@ -98,9 +104,10 @@
             // 
             // btn_cancel
             // 
-            this.btn_cancel.Location = new System.Drawing.Point(12, 159);
+            this.btn_cancel.Location = new System.Drawing.Point(16, 196);
+            this.btn_cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(60, 23);
+            this.btn_cancel.Size = new System.Drawing.Size(80, 28);
             this.btn_cancel.TabIndex = 14;
             this.btn_cancel.Text = "Отмена";
             this.btn_cancel.UseVisualStyleBackColor = true;
@@ -108,9 +115,9 @@
             // 
             // newTariff
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(191, 194);
+            this.ClientSize = new System.Drawing.Size(255, 239);
             this.Controls.Add(this.btn_done);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.label5);
@@ -118,6 +125,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tb_tariff);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "newTariff";
             this.Text = "newTariff";
             ((System.ComponentModel.ISupportInitialize)(this.nud_balance)).EndInit();
